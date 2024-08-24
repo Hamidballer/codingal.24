@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<h1>Arguments</h1>
+</head>
+
+<body>
+<p id="ball"></p>
+<script>
+    function findmax(){
+    var i
+    var max=0
+   for(i=0;i<arguments.length;i++) {
+    if(arguments[i]>max) {
+        max=arguments[i]
+    }
+   }
+   return max   
+    }
+    document.getElementById("ball").innerHTML=findmax(4,67,5,98)
+</script>
+</body>
+
+</html>
